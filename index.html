@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>illust maker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- 上半分 -->
+    <div class="preview-image__bg">
+      <div class="preview-image__wrapper" id="preview-image__wrapper">
+        <img src="images/original-image.png" alt="" class="preview-image1">
+
+      </div>
+    </div>
+
+    <!-- 真ん中の帯(?) -->
+    <div class="bg-medium"></div>
+
+    <!-- 下半分 -->
+    <div class="parts-images">
+      <!-- 目の記載 -->
+      <div class="item">
+        <h2 class="item__title">め</h2>
+        <div class="item__wrapper">
+          <div class="item__image">
+            <img src="images/exEye1.png" alt="" class="displayedEyeImage">
+          </div>
+          <div class="item__image">
+            <img src="images/exEye2.png" alt="" class="displayedEyeImage">
+          </div>
+          <div class="item__image">
+            <img src="images/exEye3.png" alt="" class="displayedEyeImage">
+          </div>
+          <div class="item__image">
+            <img src="images/exEye4.png" alt="" class="displayedEyeImage">
+          </div>
+        </div>
+      </div>
+
+      <!-- 口の記載 -->
+      <div class="item">
+        <h2 class="item__title">くち</h2>
+        <div class="item__wrapper">
+          <div class="item__image">
+            <img src="images/exMouth1.png" alt="" class="displayedMouthImage">
+          </div>
+          <div class="item__image">
+            <img src="images/exMouth2.png" alt="" class="displayedMouthImage">
+          </div>
+          <div class="item__image">
+            <img src="images/exMouth3.png" alt="" class="displayedMouthImage">
+          </div>
+          <div class="item__image">
+            <img src="images/exMouth4.png" alt="" class="displayedMouthImage">
+          </div>
+        </div>
+      </div>
+
+      <!-- 髪の記載 -->
+      <div class="item">
+        <h2 class="item__title">かみ</h2>
+        <div class="item__wrapper">
+          <div class="item__image">
+            <img src="images/hair1.png" alt="" class="displayedHairImage">
+          </div>
+          <div class="item__image">
+            <img src="images/hair2.png" alt="" class="displayedHairImage">
+          </div>
+          <div class="item__image">
+            <img src="images/hair3.png" alt="" class="displayedHairImage">
+          </div>
+          <div class="item__image">
+            <img src="images/hair4.png" alt="" class="displayedHairImage">
+          </div>
+          <div class="item__image">
+            <img src="images/hair5.png" alt="" class="displayedHairImage">
+          </div>
+          <div class="item__image">
+            <img src="images/hair6.png" alt="" class="displayedHairImage">
+          </div>
+        </div>
+      </div>
+
+      <!-- 決定ボタン -->
+      <div class="btn-wrapper">
+        <a class="btn" id="btn">かんせい！</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ここをはじめはhiddenの状態にしておく？ -->
+
+  <div class="result-bg hide" id="result-bg">
+  </div>
+  <div class="result-image__wrapper hide" id="result-image__wrapper">
+    <img src="images/original-image.png" alt="">
+  </div>
+  <div class="download-btn hide" id="download-btn">
+    <a class="download-text">ダウンロード</a>
+  </div>
+
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
